@@ -76,7 +76,7 @@
         align-items: center;
         text-align: center;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         backdrop-filter: blur(5px);
         background: linear-gradient(transparent, rgba(255,255,255,0.12));
         border-radius: 0px;
@@ -112,7 +112,6 @@
     }
     .hero-content button:hover {
         background: #1e6ed7;
-        border-color: aliceblue;
     }
 
     .albums-section{
@@ -206,6 +205,7 @@
 
             .listen-btn:active{ transform:translateY(1px); }
             .listen-btn:hover{ opacity:0.95; }
+
 
             @media (max-width:720px){
                 .albums-wrapper{ gap:14px; justify-content:center; }
