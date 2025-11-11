@@ -27,59 +27,80 @@
     <section id="musica" class="albums-section" aria-label="Álbumes de Conan Gray">
 
         <div class="albums-wrapper" role="list">
+            <button class="carousel-btn prev" aria-label="Álbum anterior">❮</button>
+            
+            <div class="carousel-container">
             <figure class="album-card" role="listitem">
                 <a class="album-cover" href="#" aria-label="Sunset season portada">
-                    <img src="sunset season.jpg" alt="Portada Sunset season">
+                <img src="sunset season.jpg" alt="Portada Sunset season">
                 </a>
                 <figcaption class="album-info">
-                    <div class="album-title">Sunset season</div>
-                    <div class="album-sub">2018</div>
-                    <a class="listen-btn" href="https://open.spotify.com/intl-es/album/2CMlkzFI2oDAy5MbyV7OV5?si=mmmu1OC_Q6iQMID4cMsq8A" target="_blank" rel="noopener">Escuchar</a>
+                <div class="album-title">Sunset season</div>
+                <div class="album-sub">2018</div>
+                <a class="listen-btn" href="https://open.spotify.com/intl-es/album/2CMlkzFI2oDAy5MbyV7OV5?si=mmmu1OC_Q6iQMID4cMsq8A" target="_blank" rel="noopener">Escuchar</a>
                 </figcaption>
             </figure>
             <figure class="album-card" role="listitem">
                 <a class="album-cover" href="#" aria-label="Kid Krow portada">
-                    <img src="Kid Krow.jpeg" alt="Portada Kid Krow">
+                <img src="Kid Krow.jpeg" alt="Portada Kid Krow">
                 </a>
                 <figcaption class="album-info">
-                    <div class="album-title">Kid Krow</div>
-                    <div class="album-sub">2020</div>
-                    <a class="listen-btn" href="https://open.spotify.com/intl-es/album/2CMlkzFI2oDAy5MbyV7OV5?si=mmmu1OC_Q6iQMID4cMsq8A" target="_blank" rel="noopener">Escuchar</a>
+                <div class="album-title">Kid Krow</div>
+                <div class="album-sub">2020</div>
+                <a class="listen-btn" href="https://open.spotify.com/intl-es/album/2CMlkzFI2oDAy5MbyV7OV5?si=mmmu1OC_Q6iQMID4cMsq8A" target="_blank" rel="noopener">Escuchar</a>
                 </figcaption>
             </figure>
-
             <figure class="album-card" role="listitem">
                 <a class="album-cover" href="#" aria-label="Superache portada">
-                    <img src="Superache.jpeg" alt="Portada Superache">
+                <img src="Superache.jpeg" alt="Portada Superache">
                 </a>
                 <figcaption class="album-info">
-                    <div class="album-title">Superache</div>
-                    <div class="album-sub">2022</div>
-                    <a class="listen-btn" href="https://open.spotify.com/intl-es/album/5hIOd0FvjlgG4uLjXHkFWI?si=JPeSofa_T2Sy-2_27zhk4A" target="_blank" rel="noopener">Escuchar</a>
+                <div class="album-title">Superache</div>
+                <div class="album-sub">2022</div>
+                <a class="listen-btn" href="https://open.spotify.com/intl-es/album/5hIOd0FvjlgG4uLjXHkFWI?si=JPeSofa_T2Sy-2_27zhk4A" target="_blank" rel="noopener">Escuchar</a>
                 </figcaption>
             </figure>
-
             <figure class="album-card" role="listitem">
                 <a class="album-cover" href="#" aria-label="Found Heaven portada">
-                    <img src="Found Heaven.jpeg" alt="Portada Found Heaven">
+                <img src="Found Heaven.jpeg" alt="Portada Found Heaven">
                 </a>
                 <figcaption class="album-info">
-                    <div class="album-title">Found Heaven</div>
-                    <div class="album-sub">2024</div>
-                    <a class="listen-btn" href="https://open.spotify.com/intl-es/album/39gMxRpFKgIVvw3krIIam5?si=finuIt7RRQSNSN3cFAx7aA" target="_blank" rel="noopener">Escuchar</a>
+                <div class="album-title">Found Heaven</div>
+                <div class="album-sub">2024</div>
+                <a class="listen-btn" href="https://open.spotify.com/intl-es/album/39gMxRpFKgIVvw3krIIam5?si=finuIt7RRQSNSN3cFAx7aA" target="_blank" rel="noopener">Escuchar</a>
                 </figcaption>
             </figure>
-
             <figure class="album-card" role="listitem">
                 <a class="album-cover" href="#" aria-label="Wishbone portada">
-                    <img src="wisbone.jpeg" alt="Portada Wishbone">
+                <img src="wisbone.jpeg" alt="Portada Wishbone">
                 </a>
                 <figcaption class="album-info">
-                    <div class="album-title">Wishbone</div>
-                    <div class="album-sub">2025</div>
-                    <a class="listen-btn" href="https://open.spotify.com/intl-es/album/1Q0kTJx8DrQd8RJW9L7eIN?si=Y-__40FUT2alMk7UmbPY3Q" target="_blank" rel="noopener">Escuchar</a>
+                <div class="album-title">Wishbone</div>
+                <div class="album-sub">2025</div>
+                <a class="listen-btn" href="https://open.spotify.com/intl-es/album/1Q0kTJx8DrQd8RJW9L7eIN?si=Y-__40FUT2alMk7UmbPY3Q" target="_blank" rel="noopener">Escuchar</a>
                 </figcaption>
             </figure>
+            </div>
+            
+            <button class="carousel-btn next" aria-label="Próximo álbum">❯</button>
+            
+            <script>
+            const carousel = document.querySelector('.carousel-container');
+            const prevBtn = document.querySelector('.carousel-btn.prev');
+            const nextBtn = document.querySelector('.carousel-btn.next');
+            const cardWidth = 220;
+            let scrollPos = 0;
+            
+            prevBtn.addEventListener('click', () => {
+                scrollPos = Math.max(0, scrollPos - cardWidth);
+                carousel.scrollLeft = scrollPos;
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                scrollPos += cardWidth;
+                carousel.scrollLeft = scrollPos;
+            });
+            </script>
         </div>
     </section>
 </body>
