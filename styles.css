@@ -11,7 +11,7 @@
 
     .hero {
         height: 100vh;
-        background: url('Conan-Wishbone.jpg') top/cover no-repeat;
+        background: url('Conan-Wishbone.webp') top/cover no-repeat;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -215,4 +215,5 @@
             @media (max-width:420px){
                 .album-card{ width:100%; }
                 }
+
    
