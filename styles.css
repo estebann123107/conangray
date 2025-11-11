@@ -210,6 +210,9 @@
             @media (max-width:720px){
                 .albums-wrapper{ gap:14px; justify-content:center; }
                 .album-card{ width:46%; }
+                .menu {
+                        display: none;
+                        }   
             }
 
             @media (max-width:420px){
