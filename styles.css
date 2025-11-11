@@ -152,7 +152,7 @@
                 box-shadow:0 14px 40px rgba(0,0,0,0.7);
             }
             .album-card:hover .albums-section{
-                background: radial-gradient();
+                background: radial-gradient(#1f1f1f, #851f1f);
             }
 
             .album-cover{
