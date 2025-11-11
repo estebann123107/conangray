@@ -112,6 +112,7 @@
     }
     .hero-content button:hover {
         background: #1e6ed7;
+        border-color: aliceblue;
     }
 
     .albums-section{
