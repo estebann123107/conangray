@@ -11,12 +11,11 @@
 
     .hero {
         height: 100vh;
-        background: url('Conan-Wishbone.webp') top/cover no-repeat;
+        background: url('Conan-Wishbone.webp') blur(5px) top/cover no-repeat;
         display: flex;
         flex-direction: column;
         position: relative;
         overflow: hidden;
-         backdrop-filter: blur(20px);
         border-radius: 20px;
         margin: 40px;
         padding: 60px;
