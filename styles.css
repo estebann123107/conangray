@@ -217,6 +217,9 @@
 
             @media (max-width:420px){
                 .album-card{ width:100%; }
+                .menu {
+                        display: none;
+                        } 
                 }
 
    
