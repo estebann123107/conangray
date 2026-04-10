@@ -65,3 +65,12 @@ h2{
 .AlbumsSection h2{
     color: white;
 }
+.AlbumsSection .album{
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
