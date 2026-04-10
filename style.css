@@ -43,6 +43,9 @@ nav{
     text-decoration: none;
     font-size: 18px;
 }
+.navLinks li a:hover{
+    color: #457490;
+}
 .logo{
     width: 50px;
     height: 50px;
@@ -62,9 +65,10 @@ h2{
     text-align: center;
     margin: 60px 10px;
 }
-.AlbumsSection h2{
-    color: white;
+.AlbumsSection:hover{
+    color: #457490;
 }
+
 .Albums{
     display: flex;
     flex-direction: row;
