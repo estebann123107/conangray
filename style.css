@@ -80,7 +80,7 @@ h2{
     height: 200px;
     border-radius: 10px;
 }
-.Album:hover h2{
+.Album:hover{
     color: #457490;
     transition: transform 0.3s ease;
 }
