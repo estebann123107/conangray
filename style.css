@@ -45,6 +45,7 @@ nav{
 }
 .navLinks li a:hover{
     color: #457490;
+    transition: transform 0.3s ease;
 }
 .logo{
     width: 50px;
