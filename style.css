@@ -59,4 +59,8 @@ h2{
 .AlbumsSection{
     align-items: center;
     color: white;
+    text-align: center;
+}
+.AlbumsSection h2{
+    color: white;
 }
