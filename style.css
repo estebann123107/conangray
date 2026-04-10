@@ -83,7 +83,7 @@ h2{
 }
 .Album:hover{
     color: #457490;
-    transition: transform 0.7s ease;
+    transition: transform 7s ease;
 }
 .Album img{
      width:200px
