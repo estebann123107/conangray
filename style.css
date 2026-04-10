@@ -65,9 +65,11 @@ h2{
 .AlbumsSection h2{
     color: white;
 }
-.AlbumsSection .album{
-    display: inline-block;
+.Albums{
+    display: flex;
+    flex-direction: row;
     margin: 20px;
+    gap: 5px;
     width: 200px;
     height: 200px;
     background-size: cover;
