@@ -45,7 +45,7 @@ nav{
 }
 .navLinks li a:hover{
     color: #457490;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 .logo{
     width: 50px;
@@ -83,7 +83,7 @@ h2{
 }
 .Album:hover{
     color: #457490;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 .Album img{
      width:200px
